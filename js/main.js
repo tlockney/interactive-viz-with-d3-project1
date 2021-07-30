@@ -58,7 +58,7 @@ barChart
   .selectAll(".artist-album")
   .data(topRockAlbums)
   .join("text")
-  .attr("class", "artist-album label")
+  .attr("class", "label artist-album")
   .attr("y", (d, i) => barMargin + (barThickness + barMargin) * i + 14)
   .text((d) => d.artist + ", " + d.title);
 
